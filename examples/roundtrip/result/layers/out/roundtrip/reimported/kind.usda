@@ -1,0 +1,72 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:authoritativeHost" = "ifc"
+        string "aeco:sync:gapPolicy" = "keepConnected"
+        string "aeco:sync:host" = "ifc"
+        string "aeco:sync:protocol" = "1"
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "rt_clg_fwp_1_s_Elbow" (
+                    prepend apiSchemas = ["AecoHostBindingAPI:ifc"]
+                )
+                {
+                    string aeco:host:ifc:localRef = "#92055"
+                    string aeco:host:ifc:ref = "3v5F0gCY1RUen$DdOnrQtq"
+                }
+
+                over "rt_clg_fwp_1_s_Riser" (
+                    prepend apiSchemas = ["AecoHostBindingAPI:ifc", "AecoAxisAPI", "AecoPipeAPI"]
+                )
+                {
+                    double3 aeco:axis:end = (0, 0, 3.849999905871105)
+                    double3 aeco:axis:start = (0, 0, 0)
+                    string aeco:host:ifc:localRef = "#92001"
+                    string aeco:host:ifc:ref = "3Vq4txM$1H7egMpFSQJee0"
+                    double aeco:pipe:nominalDiameter = 0.1
+
+                    over "Port" (
+                        prepend apiSchemas = ["AecoHostBindingAPI:ifc", "AecoPipePortAPI"]
+                    )
+                    {
+                        string aeco:host:ifc:localRef = "#92041"
+                        string aeco:host:ifc:ref = "0T6En1jRLKmQjLyDcVy8cu"
+                        double aeco:pipePort:nominalDiameter = 0.1
+                    }
+
+                    over "Port_d4d7f5" (
+                        prepend apiSchemas = ["AecoHostBindingAPI:ifc", "AecoPipePortAPI"]
+                    )
+                    {
+                        string aeco:host:ifc:localRef = "#92027"
+                        string aeco:host:ifc:ref = "3Kr$NHu8PMoOaIXgn_nbz1"
+                        double aeco:pipePort:nominalDiameter = 0.1
+                    }
+                }
+
+                over "wall_l0_h_014" (
+                    prepend apiSchemas = ["AecoHostBindingAPI:ifc", "AecoAxisAPI", "AecoWallAPI"]
+                )
+                {
+                    double3 aeco:axis:end = (4, 0, 0)
+                    double3 aeco:axis:start = (0, 0, 0)
+                    string aeco:host:ifc:localRef = "#2481"
+                    string aeco:host:ifc:ref = "1yh4oPnzDOJwWYP12aal10"
+                    bool aeco:wall:flipped = 0
+                    double aeco:wall:height = 7
+                    uniform token aeco:wall:locationLine = "centerline"
+                }
+            }
+        }
+    }
+}
+

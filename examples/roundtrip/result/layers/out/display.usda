@@ -1,0 +1,92 @@
+#usda 1.0
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "slab_roof_main"
+                {
+                    token visibility = "invisible"
+                }
+
+                over "wall_l0_h_014"
+                {
+                    over "Proxy"
+                    {
+                        token visibility = "invisible"
+                    }
+
+                    over "Geom" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        color3f[] primvars:displayColor = [(1, 0.3, 0.035)]
+                    }
+                }
+
+                over "rt_clg_fwp_1_s_Riser"
+                {
+                    over "Proxy"
+                    {
+                        token visibility = "invisible"
+                    }
+
+                    over "Geom" (
+                        prepend apiSchemas = ["MaterialBindingAPI"]
+                    )
+                    {
+                        color3f[] primvars:displayColor = [(0.02, 0.85, 1)]
+                    }
+                }
+            }
+
+            over "L01_Office"
+            {
+                over "slab_roof_office"
+                {
+                    token visibility = "invisible"
+                }
+            }
+        }
+    }
+}
+
+over "Renders"
+{
+    over "overview"
+    {
+        float4[] clippingPlanes = []
+        float2 clippingRange = (183.29488, 618.9388)
+        float focalLength = 48
+        float focusDistance = 0
+        float fStop = 0
+        float horizontalAperture = 20.955
+        float horizontalApertureOffset = 0
+        token projection = "perspective"
+        float verticalAperture = 13.096875
+        float verticalApertureOffset = 0
+        matrix4d xformOp:transform = ( (-0.894427190999916, 0.447213595499958, 0, 0), (-0.4082482904638631, -0.8164965809277261, 0.40824829046386313, 0), (0.1825741858350554, 0.3651483716701108, 0.9128709291752771, 0), (107.13232770143487, 151.21465540398734, 359.4466385079196, 1) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+
+    over "edited_corner"
+    {
+        float4[] clippingPlanes = []
+        float2 clippingRange = (13.712763, 53.462044)
+        float focalLength = 48
+        float focusDistance = 0
+        float fStop = 0
+        float horizontalAperture = 20.955
+        float horizontalApertureOffset = 0
+        token projection = "perspective"
+        float verticalAperture = 13.096875
+        float verticalApertureOffset = 0
+        matrix4d xformOp:transform = ( (-0.8944271909999161, 0.44721359549995804, 0, 0), (-0.40824829046386313, -0.8164965809277263, 0.40824829046386313, 0), (0.18257418583505539, 0.36514837167011077, 0.912870929175277, 0), (33.75719295927775, 13.064385921163195, 32.28596479638873, 1.0000000000000002) )
+        uniform token[] xformOpOrder = ["xformOp:transform"]
+    }
+}
+

@@ -1,0 +1,394 @@
+{
+  "basePublicationGenerator": "0.4.2",
+  "convergence": {
+    "bodies": [
+      {
+        "divergent": false,
+        "extentError": 1.4901161415892261e-09,
+        "id": "7cac4c99-c7d3-584f-a822-6410a492f040",
+        "ifc": {
+          "max": [
+            30.0,
+            0.2500000074505806,
+            7.0
+          ],
+          "min": [
+            26.0,
+            0.05000000447034836,
+            0.0
+          ],
+          "volume": 5.600000083446503
+        },
+        "native": {
+          "max": [
+            30.0,
+            0.25000000596046446,
+            7.0
+          ],
+          "min": [
+            26.0,
+            0.05000000596046447,
+            0.0
+          ],
+          "volume": 5.6000000000000005
+        },
+        "volumeError": 8.344650215263982e-08,
+        "volumeRelativeError": 1.4901160876641082e-08
+      },
+      {
+        "divergent": false,
+        "extentError": 1.2385363845623942e-09,
+        "id": "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00",
+        "ifc": {
+          "max": [
+            26.149635443836452,
+            3.050000000745058,
+            4.749999904632569
+          ],
+          "min": [
+            26.05036455616355,
+            2.949999999254942,
+            0.9
+          ],
+          "volume": 0.029944371845264897
+        },
+        "native": {
+          "max": [
+            26.149635443704906,
+            3.05,
+            4.749999905871105
+          ],
+          "min": [
+            26.050364556295097,
+            2.95,
+            0.9
+          ],
+          "volume": 0.029944371761869037
+        },
+        "volumeError": 8.339585966243845e-11,
+        "volumeRelativeError": 2.7850261843320596e-09
+      }
+    ],
+    "cameras": [],
+    "cctvConverged": false,
+    "diagnostics": [],
+    "driverDifferences": [],
+    "driverTolerance": 0.0001,
+    "driversCompared": 14,
+    "driversConverged": true,
+    "elements": 2,
+    "extentTolerance": 0.0001,
+    "maxDriverError": 0.0,
+    "maxExtentError": 1.4901161415892261e-09,
+    "maxVolumeRelativeError": 1.4901160876641082e-08,
+    "missingDrivers": [],
+    "missingElements": [],
+    "volumeAbsoluteTolerance": 1e-06,
+    "volumeRelativeTolerance": 0.01
+  },
+  "counts": {
+    "elements": 2954,
+    "levels": 2,
+    "meshes": 2987,
+    "ports": 6212,
+    "spaces": 33
+  },
+  "datacentre": {
+    "ref": "v0.4.6",
+    "variant": "base"
+  },
+  "layouts": {
+    "original": {
+      "authoredAttributesCompared": 179,
+      "checks": 70,
+      "coreValidation": {
+        "errors": 0,
+        "validators": 8,
+        "warnings": 4
+      },
+      "failed": 0,
+      "notRun": 0,
+      "resultPrims": 12273,
+      "resultStale": "PASS",
+      "sourcePrims": 12266,
+      "structureNotApplicable": 14,
+      "structurePassed": 29
+    },
+    "relocated": {
+      "authoredAttributesCompared": 179,
+      "checks": 70,
+      "coreValidation": {
+        "errors": 0,
+        "validators": 8,
+        "warnings": 4
+      },
+      "failed": 0,
+      "notRun": 0,
+      "resultPrims": 12273,
+      "resultStale": "PASS",
+      "sourcePrims": 12266,
+      "structureNotApplicable": 14,
+      "structurePassed": 29
+    }
+  },
+  "native": {
+    "blender": "5.1.2",
+    "cases": 21,
+    "datacentrePassed": 9,
+    "ifcopenshell": "0.8.5",
+    "live": "PASS",
+    "passed": 21
+  },
+  "nix": {
+    "attempts": 1,
+    "command": "nix flake check --offline --no-write-lock-file with direct local source overrides and no substituters",
+    "reason": "The nested aeco-toolchain public revision did not resolve (HTTP 404); Nix packaging is not proven.",
+    "status": "input-resolution-failed"
+  },
+  "pins": {
+    "axis": {
+      "library": "usdAecoAxis",
+      "ref": "v0.1.2",
+      "repo": "usdaeco-axis"
+    },
+    "buildup": {
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-buildup"
+    },
+    "cctv": {
+      "library": "usdAecoCctv",
+      "ref": "v0.5.2",
+      "repo": "usdaeco-cctv"
+    },
+    "core": {
+      "library": "usdAeco",
+      "ref": "v0.9.2",
+      "repo": "usdaeco-core"
+    },
+    "datacentre": {
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.6",
+      "repo": "usdaeco-datacentre"
+    },
+    "ifc": {
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.0",
+      "repo": "usdaeco-ifc"
+    },
+    "pipe": {
+      "library": "usdAecoPipe",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-pipe"
+    },
+    "scenarios": {
+      "library": "usdaeco-scenarios",
+      "ref": "v0.6.0",
+      "repo": "usdaeco-scenarios"
+    },
+    "sync": {
+      "library": "usdAecoSync",
+      "ref": "v0.5.2",
+      "repo": "usdaeco-sync"
+    },
+    "toolchain": {
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.8",
+      "repo": "usdaeco-toolchain"
+    },
+    "wall": {
+      "library": "usdAecoWall",
+      "ref": "v0.2.1",
+      "repo": "usdaeco-wall"
+    }
+  },
+  "pytest": {
+    "mode": "fresh full pytest; final gates reuse evidence only after source and native-report hashes match",
+    "passed": 34,
+    "seconds": 174.61,
+    "skipped": 0
+  },
+  "renders": [
+    {
+      "bytes": 362171,
+      "height": 600,
+      "path": "renders/edited_corner.png",
+      "sha256": "e7ca05bf17df96c0bba013e0efd1a72a367f9578bbe473ce04ff3f8e261ad4cf",
+      "width": 960
+    },
+    {
+      "bytes": 205357,
+      "height": 600,
+      "path": "renders/overview.png",
+      "sha256": "c5cdf8fe5e4c8243a8678a5faa88177350cd9d93741c5e754f08082572efa99b",
+      "width": 960
+    }
+  ],
+  "result": {
+    "bytes": 1927637,
+    "files": [
+      {
+        "bytes": 1269,
+        "path": "result/README.md",
+        "sha256": "d88c02a3846c8915b7a0bcd0055ee627ba0a97721729c3906d11b519037fc656"
+      },
+      {
+        "bytes": 1660382,
+        "normalized_sha256": "52c61da3145a893341f8baa850dea8c8379fa8dfa6fac7fae62741b855bb7c59",
+        "path": "result/example.usdc",
+        "sha256": "bfeed2a1bb7b6f923a08c3d87a4a23e2d226c76d8cec5a3eb7a1f18935c1aaaa"
+      },
+      {
+        "bytes": 321,
+        "path": "result/layers/inputs/cameras.usda",
+        "sha256": "d28324cc0f2e09d0bf7856e341dc43162e82b5d938ff0ab9e23cd97232b5540e"
+      },
+      {
+        "bytes": 2997,
+        "path": "result/layers/out/display.usda",
+        "sha256": "a1d45cb42390bf180f213184a6057f4b9be2bed5e4d4043cc8b55b5e355343e1"
+      },
+      {
+        "bytes": 4592,
+        "path": "result/layers/out/roundtrip/applied/derived.usda",
+        "sha256": "26293010ab6fc68a7d040d8563bbd04a681b3e61527d6396ff104225c16077c1"
+      },
+      {
+        "bytes": 426,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.bonsai.usda",
+        "sha256": "b5f1de03b1757b43f22b56daeeec4aee82873130d53bf499c121e66a6a16dc38"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 2638,
+        "path": "result/layers/out/roundtrip/applied/kind.usda",
+        "sha256": "99db9f6f989fa6ea222713fe4c4b05f3f75274adba8ebfd09227878949554b25"
+      },
+      {
+        "bytes": 19876,
+        "path": "result/layers/out/roundtrip/applied/result.bonsai.usda",
+        "sha256": "80aaba886ae86b1d771e10ae3c459e77f2528f49a67138160c8a2b4eb78cdad9"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 20932,
+        "path": "result/layers/out/roundtrip/final.usda",
+        "sha256": "97f042c3ac91f70111ec2ae4fdc06c05ddd757361602879b4f03ba9cfebcc065"
+      },
+      {
+        "bytes": 1145,
+        "path": "result/layers/out/roundtrip/intent.usda",
+        "sha256": "205336507a6e09d3ad7767790abd1c231275c00ed565a95c04a294b6b593fd68"
+      },
+      {
+        "bytes": 4589,
+        "path": "result/layers/out/roundtrip/reimported/derived.usda",
+        "sha256": "09a7e7ad05cd1f9a1c5f0ccfec104bdb03693b5cbde94c67c122724f4de87992"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 2651,
+        "path": "result/layers/out/roundtrip/reimported/kind.usda",
+        "sha256": "f18db5318ae9264c9348d702f035c0baf5dc0c8337425daa2b355e884780fc3e"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 90,
+        "path": "result/layers/out/source.usda",
+        "sha256": "2614b5cc30e06e16b68cdf51e8ae3c8e07289aa758ce3ef19d3970b3b8210667"
+      },
+      {
+        "bytes": 205459,
+        "path": "result/vanilla.png",
+        "sha256": "fafeeb71bbc71a48e9b5582c212ae19af81ecc0407266a77d58a96755c85faef"
+      }
+    ],
+    "normalization": "sdf-usda-v1",
+    "prim_count": 12273,
+    "vanilla": {
+      "bytes": 205459,
+      "height": 600,
+      "path": "result/vanilla.png",
+      "sha256": "fafeeb71bbc71a48e9b5582c212ae19af81ecc0407266a77d58a96755c85faef",
+      "width": 960
+    }
+  },
+  "reviewPaths": [
+    "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Elbow",
+    "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Riser",
+    "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/wall_l0_h_014"
+  ],
+  "roundtrip": [
+    {
+      "bodiesCompared": 2,
+      "counts": {
+        "elements": 2954,
+        "levels": 2,
+        "meshes": 2987,
+        "ports": 6212,
+        "spaces": 33
+      },
+      "driverDifferences": 0,
+      "driversCompared": 14,
+      "elements": 2,
+      "facility": "demo-datacentre-01",
+      "mode": "native-base",
+      "repeatMutations": 0,
+      "sourcePrims": 12266,
+      "variant": "base"
+    }
+  ],
+  "source": {
+    "layers": [
+      {
+        "bytes": 332637,
+        "path": "dc.geometry.usdc",
+        "sha256": "d73387613389fda72868152abc29f0ccfcae3f092f274e99bc3fb7b88998ec5c"
+      },
+      {
+        "bytes": 1471556,
+        "path": "dc.semantics.usdc",
+        "sha256": "1d9e6753da91b62fa95f553102f435c56a5ff93d63c2cec4f01d512dd8f1d3cd"
+      },
+      {
+        "bytes": 517,
+        "path": "dc.usda",
+        "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+      }
+    ],
+    "manifest_sha256": "2e9970f0def8657bb88a9a8b769de7266d1543e5132eacf0d56141c73faf158c",
+    "mode": "pinned",
+    "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+  },
+  "version": "0.1.5",
+  "warnings": {
+    "ExactWithoutTolerance": 2,
+    "proxyClassified": 2
+  }
+}

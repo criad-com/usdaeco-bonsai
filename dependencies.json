@@ -1,0 +1,129 @@
+{
+  "repos": {
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.8"
+    },
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.2"
+    },
+    "sync": {
+      "repo": "usdaeco-sync",
+      "library": "usdAecoSync",
+      "ref": "v0.5.2"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.6"
+    },
+    "scenarios": {
+      "repo": "usdaeco-scenarios",
+      "library": "usdaeco-scenarios",
+      "ref": "v0.6.0"
+    },
+    "cctv": {
+      "repo": "usdaeco-cctv",
+      "library": "usdAecoCctv",
+      "ref": "v0.5.2"
+    },
+    "buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.1"
+    },
+    "wall": {
+      "repo": "usdaeco-wall",
+      "library": "usdAecoWall",
+      "ref": "v0.2.1"
+    },
+    "pipe": {
+      "repo": "usdaeco-pipe",
+      "library": "usdAecoPipe",
+      "ref": "v0.2.1"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.0"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.2"
+    }
+  },
+  "observations": {
+    "core": {
+      "ref": "v0.9.2",
+      "revision": "11000b2ca7a2f560bfcd1ffd439bf9b71a5f5c18"
+    },
+    "sync": {
+      "ref": "v0.5.2",
+      "revision": "1ed6e5d50425811c5c85326630819bc1f04a1a15"
+    },
+    "ifc": {
+      "ref": "v0.2.0",
+      "revision": "bc910117cfde0d9434eb168b5fe66089eeda40f8"
+    },
+    "toolchain": {
+      "ref": "v0.3.8",
+      "revision": "4ec5051c419ef056dba594e64be661cb41810275"
+    },
+    "packaging": {
+      "wheel": "NOT PROVEN",
+      "entryPoint": "source distribution metadata"
+    },
+    "axis": {
+      "ref": "v0.1.2",
+      "revision": "17ca6c18f7c263c3501bc3e3580d44f630548591"
+    },
+    "datacentre": {
+      "ref": "v0.4.6",
+      "revision": "d789e40fba81e5213caf9c54d1233b77b8e1fa20"
+    },
+    "cctv": {
+      "ref": "v0.5.2",
+      "revision": "179318a090657af530d83552388e0c6fd9360631"
+    },
+    "buildup": {
+      "ref": "v0.2.1",
+      "revision": "0bf6190f060e278d4f3379b52903032e3dd9b60c"
+    },
+    "wall": {
+      "ref": "v0.2.1",
+      "revision": "d6dca4e4f4905ae32d56246a677777b6b42c9363"
+    },
+    "pipe": {
+      "ref": "v0.2.1",
+      "revision": "b07db9ecfab55754a7b2a959ab3cd0d1872032eb"
+    },
+    "scenarios": {
+      "ref": "v0.6.0",
+      "revision": "0c9327ed67f9e4585b3cd51a52c5b053c08b3643"
+    },
+    "nix": {
+      "attempts": 1,
+      "command": "nix flake check --offline --no-write-lock-file with direct local source overrides and no substituters",
+      "status": "input-resolution-failed",
+      "reason": "The nested aeco-toolchain public revision did not resolve (HTTP 404); Nix packaging is not proven."
+    }
+  },
+  "fixtures": {
+    "core-rejection": {
+      "repo": "usdaeco-core",
+      "ref": "v0.8.4",
+      "path": "testenv/test_bonsai.py",
+      "reason": "Synthetic incompatible core metadata verifies rejection; no historical core is loaded."
+    },
+    "kind-prototype": {
+      "library": "usdAecoKindProto",
+      "ref": "v0.0.0",
+      "path": "testenv/fixtures/usdAecoKindProto",
+      "reason": "Isolated protocol fixture; its historical schema defaults are intentional."
+    }
+  }
+}

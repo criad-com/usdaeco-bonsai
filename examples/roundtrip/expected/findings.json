@@ -1,0 +1,20 @@
+[
+  {
+    "mode": "native-base",
+    "elements": 2,
+    "driversCompared": 14,
+    "driverDifferences": 0,
+    "bodiesCompared": 2,
+    "repeatMutations": 0,
+    "facility": "demo-datacentre-01",
+    "variant": "base",
+    "counts": {
+      "elements": 2954,
+      "meshes": 2987,
+      "ports": 6212,
+      "spaces": 33,
+      "levels": 2
+    },
+    "sourcePrims": 12266
+  }
+]

@@ -1,0 +1,521 @@
+{
+  "pytest": {
+    "passed": 28,
+    "skipped": 0
+  },
+  "native": [
+    {
+      "id": "P-conn-keep",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "P-size-ok",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "W-neighbour",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-move",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-pan-tilt",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-zoom-clamped",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {}
+    },
+    {
+      "id": "C-preset",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 3,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-type-swap",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-create",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-delete",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "C-derived-authored",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {}
+    },
+    {
+      "id": "X-converge-cctv",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-create",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-move",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-pan-tilt",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-focal-refused",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-preset",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-type-swap",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-delete",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-repeat-apply",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 2,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    },
+    {
+      "id": "D-converge",
+      "passed": true,
+      "repeatMutations": 0,
+      "nativeEvidence": {
+        "operations": 1,
+        "blender": "5.1.2",
+        "ifcopenshell": "0.8.5",
+        "authoring": "Bonsai IFC store",
+        "diagnostics": []
+      }
+    }
+  ],
+  "coreValidation": {
+    "validators": 8,
+    "errors": 0,
+    "warnings": 4
+  },
+  "publishedAttributesCompared": 269,
+  "roundtrip": [
+    {
+      "bodiesCompared": 2,
+      "driverDifferences": 0,
+      "driversCompared": 14,
+      "elements": 2,
+      "mode": "native-wallpipe",
+      "repeatMutations": 0
+    }
+  ],
+  "checks": 68,
+  "failed": 0,
+  "version": "0.1.2",
+  "pins": {
+    "toolchain": {
+      "repo": "usdaeco-toolchain",
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.2"
+    },
+    "core": {
+      "repo": "usdaeco-core",
+      "library": "usdAeco",
+      "ref": "v0.9.1"
+    },
+    "sync": {
+      "repo": "usdaeco-sync",
+      "library": "usdAecoSync",
+      "ref": "v0.5.0"
+    },
+    "datacentre": {
+      "repo": "usdaeco-datacentre",
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.1"
+    },
+    "scenarios": {
+      "repo": "usdaeco-scenarios",
+      "library": "usdaeco-scenarios",
+      "ref": "v0.3.7"
+    },
+    "cctv": {
+      "repo": "usdaeco-cctv",
+      "library": "usdAecoCctv",
+      "ref": "v0.4.8"
+    },
+    "buildup": {
+      "repo": "usdaeco-buildup",
+      "library": "usdAecoBuildUp",
+      "ref": "v0.1.2"
+    },
+    "wall": {
+      "repo": "usdaeco-wall",
+      "library": "usdAecoWall",
+      "ref": "v0.1.2"
+    },
+    "pipe": {
+      "repo": "usdaeco-pipe",
+      "library": "usdAecoPipe",
+      "ref": "v0.1.2"
+    },
+    "ifc": {
+      "repo": "usdaeco-ifc",
+      "library": "usdaeco-ifc",
+      "ref": "v0.1.0"
+    },
+    "axis": {
+      "repo": "usdaeco-axis",
+      "library": "usdAecoAxis",
+      "ref": "v0.1.0"
+    }
+  },
+  "observations": {
+    "core": {
+      "ref": "v0.9.1",
+      "revision": "ee20aa7e20590d9893d4fbf67a39fb3a0ea782d0"
+    },
+    "sync": {
+      "ref": "v0.5.0",
+      "revision": "f0016e9bc24f9851ade3972380e054abc75c501c"
+    },
+    "ifc": {
+      "ref": "v0.1.0",
+      "revision": "43935df9e059b724f8d1ae3d0ea324dbae7efd29"
+    },
+    "toolchain": {
+      "ref": "v0.3.2",
+      "revision": "362c3a392b37a5d27d876b2e55a3d00d0af798b5"
+    },
+    "packaging": {
+      "wheel": "NOT PROVEN",
+      "entryPoint": "source distribution metadata"
+    },
+    "axis": {
+      "ref": "v0.1.0",
+      "revision": "627dbb5e19ca9070dd123432f2acb46b3ad38f51"
+    },
+    "datacentre": {
+      "ref": "v0.4.1",
+      "revision": "212aab67e06acf6a33aac43b3f241047f79103df"
+    },
+    "cctv": {
+      "ref": "v0.4.8",
+      "revision": "20c569d3ed43cc00513a662be9baa0f018d3c2bf"
+    },
+    "buildup": {
+      "ref": "v0.1.2",
+      "revision": "8377d0e1e2bcf94435a4c8518e0f3f3e1b32c606"
+    },
+    "wall": {
+      "ref": "v0.1.2",
+      "revision": "09b2993e11d07b96a2492e75c49448153524c8b2"
+    },
+    "pipe": {
+      "ref": "v0.1.2",
+      "revision": "f48a764dacc99c4467b426f3c1bb691c5c783952"
+    },
+    "nix": {
+      "attempts": 1,
+      "command": "nix flake check --offline --no-write-lock-file",
+      "status": "input-resolution-failed",
+      "input": "axis",
+      "ref": "v0.1.0",
+      "response": 404
+    }
+  },
+  "structure": {
+    "passed": 28,
+    "applicable": 14,
+    "notApplicable": 14
+  },
+  "publication": {
+    "bytes": 403005,
+    "files": [
+      {
+        "bytes": 1351,
+        "path": "result/README.md",
+        "sha256": "80a9102d72cedce4ef1bc21af1d4d4275cc09e6425f575b5417ef5a517c55c59"
+      },
+      {
+        "bytes": 14211,
+        "normalized_sha256": "a57ae28427df71c1454ea5b11f6bb09089db3b3d49e29a90c6655a1f3eabc7cf",
+        "path": "result/example.usdc",
+        "sha256": "a8954950c2d48191fb42c2f798cc376ce184a2cc6e01694d383a31d09901c4dd"
+      },
+      {
+        "bytes": 184,
+        "path": "result/layers/inputs/cameras.usda",
+        "sha256": "b116ec9bed2c8a8bed612648f463a461b53cee968a5b9360810090205ff4bc9d"
+      },
+      {
+        "bytes": 2204,
+        "path": "result/layers/out/display.usda",
+        "sha256": "9746785f59d314d0add6a274171a243920a0e95d371729f4857b7b898e3b617a"
+      },
+      {
+        "bytes": 9651,
+        "path": "result/layers/out/roundtrip/applied/derived.usda",
+        "sha256": "a5cf22572fb1d3376b382dcbc1af92740ca8b1618314ae6f468fe960b53afb02"
+      },
+      {
+        "bytes": 426,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.bonsai.usda",
+        "sha256": "b5f1de03b1757b43f22b56daeeec4aee82873130d53bf499c121e66a6a16dc38"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 5919,
+        "path": "result/layers/out/roundtrip/applied/kind.usda",
+        "sha256": "38c360d7538133f580759e3ed7a628ece8473830c8cb81cdb552eafd942c1789"
+      },
+      {
+        "bytes": 35566,
+        "path": "result/layers/out/roundtrip/applied/result.bonsai.usda",
+        "sha256": "8687cf31777a27550954bee736d2758ebdc3b7ea92368667a07a3958ba64ba1b"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 38901,
+        "path": "result/layers/out/roundtrip/final.usda",
+        "sha256": "8b3703649497e2d5bd62212409a1a5ac658af82824cb2d080cb54074c731db1a"
+      },
+      {
+        "bytes": 917,
+        "path": "result/layers/out/roundtrip/intent.usda",
+        "sha256": "e31066604ea5d42b17d32b08c7c44e7e76f2b021d72e337f29d3d65b5db60b1b"
+      },
+      {
+        "bytes": 9666,
+        "path": "result/layers/out/roundtrip/reimported/derived.usda",
+        "sha256": "c8d781bd96fa45c1e2808a809f15aa80056e821dc4ce11f029cdb40a6110f38c"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 5952,
+        "path": "result/layers/out/roundtrip/reimported/kind.usda",
+        "sha256": "3f662fe752bacd2ca0578bd692a71ef4f355459d3d9840fc42c9457726b1abaf"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 17118,
+        "path": "result/layers/out/source/dc.geometry.usda",
+        "sha256": "48c71c6609df2f4c48565ffcaa655f304a324f8e569de12dfea5f79fdf4f425b"
+      },
+      {
+        "bytes": 8028,
+        "path": "result/layers/out/source/dc.semantics.usda",
+        "sha256": "07b236727360d72935720316ca9ccacae73a3d73801149c2cfb02399b5376c99"
+      },
+      {
+        "bytes": 534,
+        "path": "result/layers/out/source/dc.usda",
+        "sha256": "319ca873059d245883ee7c6e9afa77123ac182c27f783ad527a5643473ca35f5"
+      },
+      {
+        "bytes": 252107,
+        "path": "result/vanilla.png",
+        "sha256": "06b5586a4176e8815c3673dee93fbe6a88f284764c11b56ef5c78187eb5fbe5b"
+      }
+    ],
+    "normalization": "sdf-usda-v1",
+    "prim_count": 33,
+    "vanilla": {
+      "bytes": 252107,
+      "height": 600,
+      "path": "result/vanilla.png",
+      "sha256": "06b5586a4176e8815c3673dee93fbe6a88f284764c11b56ef5c78187eb5fbe5b",
+      "width": 960
+    }
+  },
+  "renders": [
+    {
+      "bytes": 252241,
+      "height": 600,
+      "path": "renders/edited_corner.png",
+      "sha256": "0c1b8e7baa695f658c5621ed1765cde9d3bf16ff521cc5d8afccc7e03a510f03",
+      "width": 960
+    }
+  ],
+  "source": {
+    "layers": [
+      {
+        "bytes": 5761,
+        "path": "dc.geometry.usdc",
+        "sha256": "ca09ac0841e7ff38a06085913ca694a8703c9d00e1628610a1a4a989fa295e2a"
+      },
+      {
+        "bytes": 8028,
+        "path": "dc.semantics.usda",
+        "sha256": "07b236727360d72935720316ca9ccacae73a3d73801149c2cfb02399b5376c99"
+      },
+      {
+        "bytes": 534,
+        "path": "dc.usda",
+        "sha256": "319ca873059d245883ee7c6e9afa77123ac182c27f783ad527a5643473ca35f5"
+      }
+    ],
+    "mode": "override",
+    "sha256": "319ca873059d245883ee7c6e9afa77123ac182c27f783ad527a5643473ca35f5"
+  },
+  "remoteLive": {
+    "status": "NOT RUN"
+  },
+  "notRun": 1,
+  "licence": {
+    "root": "MIT",
+    "GPL-3.0-or-later": [
+      "blender/operations.py",
+      "blender/__init__.py"
+    ]
+  }
+}

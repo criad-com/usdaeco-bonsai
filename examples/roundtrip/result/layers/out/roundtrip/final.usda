@@ -1,0 +1,317 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:authoritativeHost" = "ifc"
+        string "aeco:sync:gapPolicy" = "keepConnected"
+        string "aeco:sync:host" = "ifc"
+        string "aeco:sync:protocol" = "1"
+    }
+    defaultPrim = "demo_datacentre_01"
+    fallbackPrimTypes = {
+        token[] AecoFacility = ["Xform"]
+        token[] AecoFacilityPart = ["Xform"]
+        token[] AecoLevel = ["Xform"]
+        token[] AecoPort = ["Xform"]
+        token[] AecoSite = ["Xform"]
+        token[] AecoSpace = ["Xform"]
+        token[] AecoSyncDiagnostic = ["Scope"]
+        token[] AecoSystem = ["Scope"]
+        token[] AecoZone = ["Scope"]
+    }
+    metersPerUnit = 1
+    upAxis = "Z"
+)
+
+def Xform "demo_datacentre_01" (
+    apiSchemas = ["AecoProjectAPI"]
+    kind = "assembly"
+)
+{
+    string aeco:project:id = "0c4e53f3-56fb-50d8-a287-1ee80e4e5f1f"
+    string aeco:project:name = "demo-datacentre-01"
+
+    def AecoSite "demo_datacentre_01_Site" (
+        apiSchemas = ["AecoClassificationAPI:ifc"]
+    )
+    {
+        string aeco:class:ifc:code = "IfcSite"
+        string aeco:class:ifc:name = "demo-datacentre-01 Site"
+        string aeco:id = "8565d6cd-0479-54e9-87f5-f044966073bc"
+        custom string aeco:props:DC_Identity:Discipline = "coordination"
+        custom string aeco:props:DC_Identity:Id = "site"
+        custom string aeco:props:Pset_SiteCommon:Status = "NEW"
+
+        def AecoFacility "demo_datacentre_01" (
+            apiSchemas = ["AecoClassificationAPI:ifc"]
+        )
+        {
+            string aeco:class:ifc:code = "IfcBuilding"
+            string aeco:class:ifc:name = "demo-datacentre-01"
+            string aeco:id = "a9b54027-a170-5ea3-ade1-dec011ba680e"
+            custom string aeco:props:DC_Identity:Discipline = "coordination"
+            custom string aeco:props:DC_Identity:Id = "building"
+            custom string aeco:props:Pset_BuildingCommon:Status = "NEW"
+
+            def AecoLevel "L00_Ground" (
+                apiSchemas = ["AecoClassificationAPI:ifc"]
+            )
+            {
+                string aeco:class:ifc:code = "IfcBuildingStorey"
+                string aeco:class:ifc:name = "L00 Ground"
+                double aeco:elevation = 0
+                string aeco:id = "501c2120-e676-59e9-b881-8f2f12694a08"
+                custom string aeco:props:DC_Identity:Discipline = "coordination"
+                custom string aeco:props:DC_Identity:Id = "lvl.l0"
+                custom string aeco:props:Pset_BuildingStoreyCommon:Status = "NEW"
+
+                def Xform "rt_clg_fwp_1_s_Elbow" (
+                    apiSchemas = ["AecoHostBindingAPI:ifc", "AecoElementAPI", "AecoClassificationAPI:ifc", "AecoTypeAPI"]
+                )
+                {
+                    string aeco:class:ifc:code = "IfcPipeFitting.BEND"
+                    string aeco:class:ifc:name = "rt.clg.fwp.1.s Elbow"
+                    string aeco:host:ifc:localRef = "#92055"
+                    string aeco:host:ifc:ref = "3v5F0gCY1RUen$DdOnrQtq"
+                    string aeco:id = "f914f02a-3220-5b7a-8c7f-367631d5adf4"
+                    uniform token aeco:phase = "proposed"
+                    custom string aeco:props:DC_Identity:Discipline = "coordination"
+                    custom string aeco:props:DC_Identity:Id = "rt.clg.fwp.1.s.fit001"
+                    custom string aeco:props:DC_Identity:System = "sys.fws"
+                    custom string aeco:props:Pset_PipeFittingTypeCommon:Status = "NEW"
+                    string aeco:type:model = "FWS Pipe Bend"
+                    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26.1, 3, 4.55, 1) )
+                    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                    def Mesh "Geom" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "tessellated"
+                        uniform token aeco:derived:role = "body"
+                        string aeco:derived:source = "f914f02a-3220-5b7a-8c7f-367631d5adf4"
+                        string aeco:derived:stamp = "ifc2usdaeco (ifcopenshell 0.8.5)"
+                        uniform bool doubleSided = 1
+                        float3[] extent = [(-0.05, -0.05, 0), (0.05, 0.05, 0.1)]
+                        int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+                        int[] faceVertexIndices = [1, 0, 3, 2, 1, 3, 2, 3, 5, 4, 2, 5, 4, 5, 7, 6, 4, 7, 6, 7, 0, 1, 6, 0, 3, 0, 5, 0, 7, 5, 4, 1, 2, 4, 6, 1]
+                        point3f[] points = [(-0.05, -0.05, 0), (-0.05, -0.05, 0.1), (0.05, -0.05, 0.1), (0.05, -0.05, 0), (0.05, 0.05, 0.1), (0.05, 0.05, 0), (-0.05, 0.05, 0.1), (-0.05, 0.05, 0)]
+                        color3f[] primvars:displayColor = [(0.16, 0.55, 0.34)]
+                    }
+
+                    def AecoPort "Port"
+                    {
+                        rel aeco:connectedPorts = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Leg/Port_e8e085>
+                        uniform token aeco:flowDirection = "source"
+                        string aeco:id = "49e664f2-83cb-5be3-a8b6-2338d88c5f18"
+                        uniform token aeco:medium = "pipe"
+                        matrix4d xformOp:transform = ( (0, 1, 0, 0), (0, 0, 1, 0), (1, 0, 0, 0), (0.05000000000000071, 0, 0.04999999999999982, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+
+                    def AecoPort "Port_618145"
+                    {
+                        rel aeco:connectedPorts = None
+                        string aeco:id = "618145ef-93b8-58b2-b3ac-baf616a0143a"
+                        uniform token aeco:medium = "pipe"
+                    }
+                }
+
+                def Xform "rt_clg_fwp_1_s_Riser" (
+                    apiSchemas = ["AecoHostBindingAPI:ifc", "AecoAxisAPI", "AecoPipeAPI", "AecoElementAPI", "AecoClassificationAPI:ifc", "AecoPipeTypeAPI", "AecoTypeAPI"]
+                )
+                {
+                    double3 aeco:axis:end = (0, 0, 3.849999905871105)
+                    double aeco:axis:length = 3.849999905871105
+                    double3 aeco:axis:start = (0, 0, 0)
+                    string aeco:class:ifc:code = "IfcPipeSegment.RIGIDSEGMENT"
+                    string aeco:class:ifc:name = "rt.clg.fwp.1.s Riser"
+                    string aeco:host:ifc:localRef = "#92001"
+                    string aeco:host:ifc:ref = "3Vq4txM$1H7egMpFSQJee0"
+                    string aeco:id = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                    uniform token aeco:phase = "proposed"
+                    double aeco:pipe:innerDiameter = 0
+                    double aeco:pipe:nominalDiameter = 0.1
+                    double aeco:pipe:outerDiameter = 0.1
+                    string aeco:pipe:sizeLabel = ""
+                    double[] aeco:pipeType:innerDiameters = [0.044, 0.059, 0.074]
+                    string aeco:pipeType:material = ""
+                    double[] aeco:pipeType:nominalDiameters = [0.05, 0.065, 0.08]
+                    double[] aeco:pipeType:outerDiameters = [0.05, 0.065, 0.08]
+                    custom string aeco:props:DC_Identity:Discipline = "coordination"
+                    custom string aeco:props:DC_Identity:Id = "rt.clg.fwp.1.s.seg001"
+                    custom string aeco:props:DC_Identity:System = "sys.fws"
+                    custom string aeco:props:Pset_PipeSegmentTypeCommon:Status = "NEW"
+                    custom double aeco:props:Qto_CableCarrierSegmentBaseQuantities:Length = 3.65
+                    string aeco:type:model = "FWS Pipe DN100"
+                    rel proxyPrim = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Riser/Proxy>
+                    matrix4d xformOp:transform = ( (0, -1, 0, 0), (1, 0, 0, 0), (0, 0, 1, 0), (26.1, 3, 0.9, 1) )
+                    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                    def BasisCurves "Axis" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                        string aeco:derived:stamp = "kind_import"
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(0, 0, 0), (0, 0, 3.85)]
+                        point3f[] points = [(0, 0, 0), (0, 0, 3.85)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        uniform token wrap = "nonperiodic"
+                    }
+
+                    def Mesh "Geom" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "tessellated"
+                        uniform token aeco:derived:role = "body"
+                        string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                        string aeco:derived:stamp = "ifc2usdaeco (ifcopenshell 0.8.5)"
+                        uniform bool doubleSided = 1
+                        float3[] extent = [(-0.05, -0.049635444, 0), (0.05, 0.049635444, 3.85)]
+                        int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+                        int[] faceVertexIndices = [1, 0, 27, 2, 1, 27, 3, 2, 28, 2, 27, 28, 4, 3, 29, 3, 28, 29, 5, 4, 30, 4, 29, 30, 6, 5, 31, 5, 30, 31, 7, 6, 32, 6, 31, 32, 8, 7, 33, 9, 8, 33, 7, 32, 33, 9, 33, 34, 10, 9, 35, 9, 34, 35, 11, 10, 36, 12, 11, 36, 10, 35, 36, 12, 36, 37, 12, 37, 38, 13, 12, 38, 13, 38, 39, 14, 13, 39, 15, 14, 40, 14, 39, 40, 15, 40, 41, 16, 15, 41, 17, 16, 41, 17, 41, 42, 18, 17, 43, 19, 18, 43, 17, 42, 43, 19, 43, 44, 20, 19, 45, 21, 20, 45, 19, 44, 45, 21, 45, 46, 22, 21, 47, 21, 46, 47, 23, 22, 48, 24, 23, 48, 22, 47, 48, 24, 48, 49, 25, 24, 50, 24, 49, 50, 26, 25, 51, 25, 50, 51, 1, 26, 0, 26, 51, 0, 27, 0, 29, 28, 27, 29, 31, 30, 29, 32, 31, 29, 33, 32, 29, 34, 33, 29, 35, 34, 29, 36, 35, 29, 37, 36, 29, 38, 37, 29, 39, 38, 29, 40, 39, 29, 41, 40, 29, 42, 41, 29, 43, 42, 29, 44, 43, 29, 45, 44, 29, 46, 45, 29, 47, 46, 29, 48, 47, 29, 49, 48, 29, 50, 49, 29, 51, 50, 29, 0, 51, 29, 4, 1, 2, 4, 2, 3, 4, 5, 6, 4, 6, 7, 4, 7, 8, 4, 8, 9, 4, 9, 10, 4, 10, 11, 4, 11, 12, 4, 12, 13, 4, 13, 14, 4, 14, 15, 4, 15, 16, 4, 16, 17, 4, 17, 18, 4, 18, 19, 4, 19, 20, 4, 20, 21, 4, 21, 22, 4, 22, 23, 4, 23, 24, 4, 24, 25, 4, 25, 26, 4, 26, 1]
+                        point3f[] points = [(0.05, 0, 0), (0.05, 0, 3.85), (0.04854709, 0.011965783, 3.85), (0.044272803, 0.02323616, 3.85), (0.037425537, 0.033156134, 3.85), (0.028403237, 0.04114919, 3.85), (0.017730244, 0.046750814, 3.85), (0.006026834, 0.049635444, 3.85), (-0.006026834, 0.049635444, 3.85), (-0.017730244, 0.046750814, 3.85), (-0.028403237, 0.04114919, 3.85), (-0.037425537, 0.033156134, 3.85), (-0.044272803, 0.02323616, 3.85), (-0.04854709, 0.011965783, 3.85), (-0.05, 5.0532156e-17, 3.85), (-0.04854709, -0.011965783, 3.85), (-0.044272803, -0.02323616, 3.85), (-0.037425537, -0.033156134, 3.85), (-0.028403237, -0.04114919, 3.85), (-0.017730244, -0.046750814, 3.85), (-0.006026834, -0.049635444, 3.85), (0.006026834, -0.049635444, 3.85), (0.017730244, -0.046750814, 3.85), (0.028403237, -0.04114919, 3.85), (0.037425537, -0.033156134, 3.85), (0.044272803, -0.02323616, 3.85), (0.04854709, -0.011965783, 3.85), (0.04854709, 0.011965783, 0), (0.044272803, 0.02323616, 0), (0.037425537, 0.033156134, 0), (0.028403237, 0.04114919, 0), (0.017730244, 0.046750814, 0), (0.006026834, 0.049635444, 0), (-0.006026834, 0.049635444, 0), (-0.017730244, 0.046750814, 0), (-0.028403237, 0.04114919, 0), (-0.037425537, 0.033156134, 0), (-0.044272803, 0.02323616, 0), (-0.04854709, 0.011965783, 0), (-0.05, 5.0532156e-17, 0), (-0.04854709, -0.011965783, 0), (-0.044272803, -0.02323616, 0), (-0.037425537, -0.033156134, 0), (-0.028403237, -0.04114919, 0), (-0.017730244, -0.046750814, 0), (-0.006026834, -0.049635444, 0), (0.006026834, -0.049635444, 0), (0.017730244, -0.046750814, 0), (0.028403237, -0.04114919, 0), (0.037425537, -0.033156134, 0), (0.044272803, -0.02323616, 0), (0.04854709, -0.011965783, 0)]
+                        color3f[] primvars:displayColor = [(0.16, 0.55, 0.34)]
+                    }
+
+                    def AecoPort "Port" (
+                        apiSchemas = ["AecoHostBindingAPI:ifc", "AecoPipePortAPI"]
+                    )
+                    {
+                        rel aeco:connectedPorts = None
+                        string aeco:host:ifc:localRef = "#92041"
+                        string aeco:host:ifc:ref = "0T6En1jRLKmQjLyDcVy8cu"
+                        string aeco:id = "1d18ec41-b5b5-54c1-ab55-f0d99ff089b8"
+                        uniform token aeco:medium = "pipe"
+                        double aeco:pipePort:nominalDiameter = 0.1
+                        matrix4d xformOp:transform = ( (0.9999999999999972, 7.549790126404312e-8, 0, 0), (-7.549790126404312e-8, 0.9999999999999972, 0, 0), (0, 0, 1, 0), (0, 3.8146972514141453e-7, 3.85, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+
+                    def AecoPort "Port_d4d7f5" (
+                        apiSchemas = ["AecoHostBindingAPI:ifc", "AecoPipePortAPI"]
+                    )
+                    {
+                        rel aeco:connectedPorts = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/Cooling_Plant_Room/FWP_1/Port_64d33a>
+                        uniform token aeco:flowDirection = "sink"
+                        string aeco:host:ifc:localRef = "#92027"
+                        string aeco:host:ifc:ref = "3Kr$NHu8PMoOaIXgn_nbz1"
+                        string aeco:id = "d4d7f5d1-e086-56c9-8912-86ac7ec65f41"
+                        uniform token aeco:medium = "pipe"
+                        double aeco:pipePort:nominalDiameter = 0.1
+                    }
+
+                    def Cylinder "Proxy" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "defaultDims"
+                        uniform token aeco:derived:role = "proxy"
+                        string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                        string aeco:derived:stamp = "kind_import"
+                        uniform token axis = "Z"
+                        float3[] extent = [(-0.05, -0.05, -1.925), (0.05, 0.05, 1.925)]
+                        double height = 3.849999905871105
+                        uniform token purpose = "proxy"
+                        double radius = 0.05
+                        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 1.9249999529355526, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+
+                def Xform "wall_l0_h_014" (
+                    apiSchemas = ["AecoHostBindingAPI:ifc", "AecoAxisAPI", "AecoWallAPI", "AecoElementAPI", "AecoClassificationAPI:ifc", "AecoBuildUpAPI", "AecoTypeAPI"]
+                )
+                {
+                    double3 aeco:axis:end = (4, 0, 0)
+                    double aeco:axis:length = 4
+                    double3 aeco:axis:start = (0, 0, 0)
+                    token[] aeco:buildUp:functions = []
+                    int[] aeco:buildUp:priorities = []
+                    double[] aeco:buildUp:thicknesses = []
+                    double aeco:buildUp:totalThickness = 0
+                    string aeco:class:ifc:code = "IfcWall.SOLIDWALL"
+                    string aeco:class:ifc:name = "wall.l0.h.014"
+                    string aeco:host:ifc:localRef = "#2481"
+                    string aeco:host:ifc:ref = "1yh4oPnzDOJwWYP12aal10"
+                    string aeco:id = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                    uniform token aeco:phase = "proposed"
+                    custom string aeco:props:DC_Identity:Discipline = "coordination"
+                    custom string aeco:props:DC_Identity:Id = "wall.l0.h.014"
+                    custom string aeco:props:Pset_WallCommon:FireRating = "REI 120"
+                    custom bool aeco:props:Pset_WallCommon:IsExternal = 0
+                    custom bool aeco:props:Pset_WallCommon:LoadBearing = 1
+                    custom string aeco:props:Pset_WallCommon:Status = "NEW"
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossSideArea = 28
+                    custom double aeco:props:Qto_WallBaseQuantities:GrossVolume = 5.6000000000000005
+                    custom double aeco:props:Qto_WallBaseQuantities:Height = 7
+                    custom double aeco:props:Qto_WallBaseQuantities:Length = 4
+                    custom double aeco:props:Qto_WallBaseQuantities:Width = 0.2
+                    string aeco:type:model = "Fire Wall 200"
+                    bool aeco:wall:flipped = 0
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 0
+                    double aeco:wall:height = 7
+                    uniform token aeco:wall:locationLine = "centerline"
+                    double aeco:wall:thickness = 0
+                    rel proxyPrim = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/wall_l0_h_014/Proxy>
+                    matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (26, 0.15000000596046448, 0, 1) )
+                    uniform token[] xformOpOrder = ["xformOp:transform"]
+
+                    def BasisCurves "Axis" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                        string aeco:derived:stamp = "kind_import"
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(0, 0, 0), (4, 0, 0)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        uniform token wrap = "nonperiodic"
+                    }
+
+                    def Mesh "Geom" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "tessellated"
+                        uniform token aeco:derived:role = "body"
+                        string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                        string aeco:derived:stamp = "ifc2usdaeco (ifcopenshell 0.8.5)"
+                        uniform bool doubleSided = 1
+                        float3[] extent = [(0, -0.1, 0), (4, 0.1, 7)]
+                        int[] faceVertexCounts = [3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3, 3]
+                        int[] faceVertexIndices = [3, 0, 1, 3, 1, 2, 5, 3, 2, 5, 2, 4, 7, 5, 4, 7, 4, 6, 0, 7, 6, 0, 6, 1, 3, 5, 7, 3, 7, 0, 6, 4, 2, 1, 6, 2]
+                        point3f[] points = [(0, -0.1, 0), (0, -0.1, 7), (0, 0.1, 7), (0, 0.1, 0), (4, 0.1, 7), (4, 0.1, 0), (4, -0.1, 7), (4, -0.1, 0)]
+                        color3f[] primvars:displayColor = [(0.58, 0.58, 0.56)]
+                    }
+
+                    def Cube "Proxy" (
+                        apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "defaultDims"
+                        uniform token aeco:derived:role = "proxy"
+                        string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                        string aeco:derived:stamp = "kind_import"
+                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                        uniform token purpose = "proxy"
+                        double size = 1
+                        matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.2, 0, 0), (0, 0, 7, 0), (2, 0.1, 3.5, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+    }
+}
+

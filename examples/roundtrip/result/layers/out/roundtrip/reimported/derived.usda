@@ -1,0 +1,100 @@
+#usda 1.0
+(
+    customLayerData = {
+    }
+)
+
+over "demo_datacentre_01"
+{
+    over "demo_datacentre_01_Site"
+    {
+        over "demo_datacentre_01"
+        {
+            over "L00_Ground"
+            {
+                over "rt_clg_fwp_1_s_Riser"
+                {
+                    double aeco:axis:length = 3.849999905871105
+                    double aeco:pipe:innerDiameter = 0
+                    double aeco:pipe:outerDiameter = 0.1
+                    string aeco:pipe:sizeLabel = ""
+                    rel proxyPrim = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Riser/Proxy>
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                        string aeco:derived:stamp = "kind_import"
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(0, 0, 0), (0, 0, 3.85)]
+                        point3f[] points = [(0, 0, 0), (0, 0, 3.85)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        uniform token wrap = "nonperiodic"
+                    }
+
+                    def Cylinder "Proxy" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "defaultDims"
+                        uniform token aeco:derived:role = "proxy"
+                        string aeco:derived:source = "dfd04dfb-5bf0-511e-8a96-ccf71a4e8a00"
+                        string aeco:derived:stamp = "kind_import"
+                        uniform token axis = "Z"
+                        float3[] extent = [(-0.05, -0.05, -1.925), (0.05, 0.05, 1.925)]
+                        double height = 3.849999905871105
+                        uniform token purpose = "proxy"
+                        double radius = 0.05
+                        matrix4d xformOp:transform = ( (1, 0, 0, 0), (0, 1, 0, 0), (0, 0, 1, 0), (0, 0, 1.9249999529355526, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+
+                over "wall_l0_h_014"
+                {
+                    double aeco:axis:length = 4
+                    double aeco:wall:grossSideArea = 28
+                    double aeco:wall:grossVolume = 0
+                    double aeco:wall:thickness = 0
+                    rel proxyPrim = </demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/wall_l0_h_014/Proxy>
+
+                    def BasisCurves "Axis" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "exact"
+                        uniform token aeco:derived:role = "axis"
+                        string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                        string aeco:derived:stamp = "kind_import"
+                        int[] curveVertexCounts = [2]
+                        float3[] extent = [(0, 0, 0), (4, 0, 0)]
+                        point3f[] points = [(0, 0, 0), (4, 0, 0)]
+                        uniform token purpose = "guide"
+                        uniform token type = "linear"
+                        uniform token wrap = "nonperiodic"
+                    }
+
+                    def Cube "Proxy" (
+                        prepend apiSchemas = ["AecoDerivedGeometryAPI"]
+                    )
+                    {
+                        uniform token aeco:derived:approx = "defaultDims"
+                        uniform token aeco:derived:role = "proxy"
+                        string aeco:derived:source = "7cac4c99-c7d3-584f-a822-6410a492f040"
+                        string aeco:derived:stamp = "kind_import"
+                        float3[] extent = [(-0.5, -0.5, -0.5), (0.5, 0.5, 0.5)]
+                        uniform token purpose = "proxy"
+                        double size = 1
+                        matrix4d xformOp:transform = ( (4, 0, 0, 0), (0, 0.2, 0, 0), (0, 0, 7, 0), (2, 0.1, 3.5, 1) )
+                        uniform token[] xformOpOrder = ["xformOp:transform"]
+                    }
+                }
+            }
+        }
+    }
+}
+

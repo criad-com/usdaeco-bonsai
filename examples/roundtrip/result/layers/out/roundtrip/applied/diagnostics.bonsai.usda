@@ -1,0 +1,23 @@
+#usda 1.0
+(
+    customLayerData = {
+        string "aeco:sync:authoritativeHost" = "bonsai"
+        string "aeco:sync:gapPolicy" = "disconnect"
+        string "aeco:sync:host" = "bonsai"
+        string "aeco:sync:protocol" = "1"
+    }
+    fallbackPrimTypes = {
+        token[] AecoSyncDiagnostic = ["Scope"]
+    }
+)
+
+def Scope "Sync"
+{
+    def Scope "Diagnostics"
+    {
+        def Scope "bonsai"
+        {
+        }
+    }
+}
+
