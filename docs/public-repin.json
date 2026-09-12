@@ -1,0 +1,838 @@
+{
+  "baselineVersion": "0.1.5",
+  "coreValidation": {
+    "errors": 0,
+    "validators": 8,
+    "warnings": 4
+  },
+  "facility": {
+    "counts": {
+      "elements": 2954,
+      "levels": 2,
+      "meshes": 2987,
+      "ports": 6212,
+      "spaces": 33
+    },
+    "finalPrims": 12273,
+    "frames": {
+      "edited_corner": {
+        "allCornersInside": true,
+        "bounds": [
+          [
+            26.0,
+            0.05000000447034836,
+            0.0
+          ],
+          [
+            30.0,
+            3.050000000745058,
+            7.0
+          ]
+        ],
+        "clipping": [
+          13.712762832641602,
+          53.46204376220703
+        ],
+        "direction": [
+          -0.18257418583505547,
+          -0.3651483716701109,
+          -0.9128709291752768
+        ],
+        "position": [
+          33.757192959277745,
+          13.064385921163193,
+          32.285964796388726
+        ],
+        "purposes": "proxy,render"
+      },
+      "overview": {
+        "allCornersInside": true,
+        "bounds": [
+          [
+            -14.0,
+            -18.300000000745058,
+            -0.53
+          ],
+          [
+            86.0,
+            36.20000000298023,
+            8.100000001490116
+          ]
+        ],
+        "clipping": [
+          183.2948760986328,
+          618.9387817382812
+        ],
+        "direction": [
+          -0.18257418583505547,
+          -0.3651483716701109,
+          -0.9128709291752768
+        ],
+        "position": [
+          107.1323277014349,
+          151.2146554039874,
+          359.44663850791954
+        ],
+        "purposes": "proxy,render"
+      }
+    },
+    "reviewPaths": [
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Elbow",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Riser",
+      "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/wall_l0_h_014"
+    ],
+    "selected": {
+      "pipe": {
+        "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/rt_clg_fwp_1_s_Riser",
+        "ref": "3Vq4txM$1H7egMpFSQJee0"
+      },
+      "wall": {
+        "path": "/demo_datacentre_01/demo_datacentre_01_Site/demo_datacentre_01/L00_Ground/wall_l0_h_014",
+        "ref": "1yh4oPnzDOJwWYP12aal10"
+      }
+    },
+    "sourcePrims": 12266
+  },
+  "finalStructure": [
+    {
+      "detail": "MIT (declared); INFO additional per-directory licences: blender/LICENSE",
+      "name": "S01",
+      "ok": true
+    },
+    {
+      "detail": "readme",
+      "name": "S02",
+      "ok": true
+    },
+    {
+      "detail": "metadata",
+      "name": "S03",
+      "ok": true
+    },
+    {
+      "detail": "dependency pins",
+      "name": "S04",
+      "ok": true
+    },
+    {
+      "detail": "flake",
+      "name": "S05",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S06",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S07",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S08",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S09",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S10",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S11",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S12",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S13",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S14",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S15",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S16",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S17",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S18",
+      "ok": true
+    },
+    {
+      "detail": "not applicable (integration)",
+      "name": "S19",
+      "ok": true
+    },
+    {
+      "detail": "usecase",
+      "name": "S20",
+      "ok": true
+    },
+    {
+      "detail": "example files",
+      "name": "S21",
+      "ok": true
+    },
+    {
+      "detail": "example manifest",
+      "name": "S22",
+      "ok": true
+    },
+    {
+      "detail": "render caps",
+      "name": "S23",
+      "ok": true
+    },
+    {
+      "detail": "vanilla",
+      "name": "S24",
+      "ok": true
+    },
+    {
+      "detail": "terms",
+      "name": "S25",
+      "ok": true
+    },
+    {
+      "detail": "check contract",
+      "name": "S26",
+      "ok": true
+    },
+    {
+      "detail": "12273 prims, 0 composition errors in relocated plugin-free result",
+      "name": "S27",
+      "ok": true
+    },
+    {
+      "detail": "stock Embree render: 960x600, 205459 bytes, non-uniform",
+      "name": "S28",
+      "ok": true
+    },
+    {
+      "detail": "1 asset paths use example inputs/, archived layers or documented resolver tokens",
+      "name": "S29",
+      "ok": true
+    }
+  ],
+  "gate": {
+    "checks": 70,
+    "failed": 0,
+    "notRun": 0,
+    "resultStale": "PASS",
+    "structureNotApplicable": 14,
+    "structureRules": 29
+  },
+  "legacyGithubRefs": 0,
+  "native": [
+    {
+      "id": "P-conn-keep",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "P-size-ok",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "W-neighbour",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-move",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-pan-tilt",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-zoom-clamped",
+      "nativeEvidence": {},
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-preset",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 3
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-type-swap",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-create",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-delete",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "C-derived-authored",
+      "nativeEvidence": {},
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "X-converge-cctv",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-create",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-move",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-pan-tilt",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-focal-refused",
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-preset",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-type-swap",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-delete",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-repeat-apply",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 2
+      },
+      "passed": true,
+      "repeatMutations": 0
+    },
+    {
+      "id": "D-converge",
+      "nativeEvidence": {
+        "authoring": "Bonsai IFC store",
+        "blender": "5.1.2",
+        "diagnostics": [],
+        "ifcopenshell": "0.8.5",
+        "operations": 1
+      },
+      "passed": true,
+      "repeatMutations": 0
+    }
+  ],
+  "nix": {
+    "attempts": 1,
+    "command": "nix flake check --offline --no-write-lock-file with eleven direct local source overrides and no substituters",
+    "directLocalOverrides": 11,
+    "exitCode": 1,
+    "reason": "Local input resolution and flake evaluation reached uncached dependency builds. The attempt was interrupted under the no-install constraint; Nix packaging is not proven.",
+    "seconds": 38.93,
+    "status": "interrupted-uncached-build"
+  },
+  "pins": {
+    "axis": {
+      "library": "usdAecoAxis",
+      "ref": "v0.1.5",
+      "repo": "usdaeco-axis",
+      "revision": "ecff1d98bcc45c22fcceefd453374671900793ae"
+    },
+    "buildup": {
+      "library": "usdAecoBuildUp",
+      "ref": "v0.2.5",
+      "repo": "usdaeco-buildup",
+      "revision": "99ac95080bf4d1403d410b356c4645c3f251aa40"
+    },
+    "cctv": {
+      "library": "usdAecoCctv",
+      "ref": "v0.5.6",
+      "repo": "usdaeco-cctv",
+      "revision": "567eb9cbdec045a6581c3f5863ac11a22f46e153"
+    },
+    "core": {
+      "library": "usdAeco",
+      "ref": "v0.9.5",
+      "repo": "usdaeco-core",
+      "revision": "683adc3280254bc71b396a9c64a359cc708788f4"
+    },
+    "datacentre": {
+      "library": "usdaeco-datacentre",
+      "ref": "v0.4.9",
+      "repo": "usdaeco-datacentre",
+      "revision": "00ac72998b1a92aa6c9e8422803c3350ca8dab37"
+    },
+    "ifc": {
+      "library": "usdaeco-ifc",
+      "ref": "v0.2.2",
+      "repo": "usdaeco-ifc",
+      "revision": "8eb72e89af15e8642d914948384fe73038cc7817"
+    },
+    "pipe": {
+      "library": "usdAecoPipe",
+      "ref": "v0.2.5",
+      "repo": "usdaeco-pipe",
+      "revision": "12179dfb86e93ec605dd8548d19c50d5671029ee"
+    },
+    "scenarios": {
+      "library": "usdaeco-scenarios",
+      "ref": "v0.8.0",
+      "repo": "usdaeco-scenarios",
+      "revision": "83de1cdab2b1f26fe7d209d9fb28090447484666"
+    },
+    "sync": {
+      "library": "usdAecoSync",
+      "ref": "v0.5.5",
+      "repo": "usdaeco-sync",
+      "revision": "2f13dffb5e29076787e6e9b81a701ce2a0ab7e8a"
+    },
+    "toolchain": {
+      "library": "usdaeco-toolchain",
+      "ref": "v0.3.10",
+      "repo": "usdaeco-toolchain",
+      "revision": "59d3da5ff5114089b54efaaae38efdd7fe1b8e73"
+    },
+    "wall": {
+      "library": "usdAecoWall",
+      "ref": "v0.2.5",
+      "repo": "usdaeco-wall",
+      "revision": "ce4b2fa54bb4c85d495237a93e3c883df9c1e1d6"
+    }
+  },
+  "publicTags": {
+    "recursive": {
+      "publicRevision": "afbea7ce2b012e55af54047311fad37339eb56df",
+      "ref": "v0.4.0",
+      "repo": "aeco-toolchain",
+      "verified": true
+    },
+    "repos": [
+      {
+        "publicRevision": "6328e1b5e63f89ea87984ad240b5c3ca37974795",
+        "ref": "v0.3.10",
+        "repo": "usdaeco-toolchain",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": "784e4a77b9b6e8340cf35f221332bc14dd9e5f20",
+        "ref": "v0.9.5",
+        "repo": "usdaeco-core",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": "0a907008dad539ce4acbb686cbf36b89db90d619",
+        "ref": "v0.5.5",
+        "repo": "usdaeco-sync",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": "f070c59f3837b2b8d55d0b3af30c628585ba5418",
+        "ref": "v0.4.9",
+        "repo": "usdaeco-datacentre",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": null,
+        "reason": "Anonymous GitHub access requested authentication; public availability not proven.",
+        "ref": "v0.8.0",
+        "repo": "usdaeco-scenarios",
+        "status": 128,
+        "verified": false
+      },
+      {
+        "publicRevision": null,
+        "reason": "Anonymous GitHub access requested authentication; public availability not proven.",
+        "ref": "v0.5.6",
+        "repo": "usdaeco-cctv",
+        "status": 128,
+        "verified": false
+      },
+      {
+        "publicRevision": "98adc60eab69b131d2f6438539e86edab7c07bf0",
+        "ref": "v0.2.5",
+        "repo": "usdaeco-buildup",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": "1708f6adf73203cf2bee5b7ead5694a84a4d96a3",
+        "ref": "v0.2.5",
+        "repo": "usdaeco-wall",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": "052a8d426274fde1928e73898a90cf45f85bfd55",
+        "ref": "v0.2.5",
+        "repo": "usdaeco-pipe",
+        "status": 0,
+        "verified": true
+      },
+      {
+        "publicRevision": null,
+        "reason": "Anonymous GitHub access requested authentication; public availability not proven.",
+        "ref": "v0.2.2",
+        "repo": "usdaeco-ifc",
+        "status": 128,
+        "verified": false
+      },
+      {
+        "publicRevision": "910ef0486ae39fb74db801fc6fab95db88d9a1ac",
+        "ref": "v0.1.5",
+        "repo": "usdaeco-axis",
+        "status": 0,
+        "verified": true
+      }
+    ],
+    "total": 11,
+    "verified": 8
+  },
+  "publication": {
+    "byteIdenticalUsdBytes": 1720909,
+    "byteIdenticalUsdFiles": 18,
+    "camerasUnchanged": true,
+    "findingsUnchanged": true,
+    "method": "examples/roundtrip/run.py --publish; retain existing PNG bytes after fresh rendering",
+    "provenanceOnly": true,
+    "resultBytes": 1927637,
+    "resultFiles": 20,
+    "retainedPngs": [
+      {
+        "byteIdenticalAfterPublish": false,
+        "bytes": 362171,
+        "changedPixelFraction": 0.105125,
+        "freshBytes": 362483,
+        "freshSha256": "f31ef422730b2c67c2a519e001fe3b0a93879b6b2b77f5d289707b9de48dfcd1",
+        "maxChannelDifference": 86,
+        "meanChannelDifference": 0.3330989583333333,
+        "path": "examples/roundtrip/renders/edited_corner.png",
+        "sha256": "e7ca05bf17df96c0bba013e0efd1a72a367f9578bbe473ce04ff3f8e261ad4cf"
+      },
+      {
+        "byteIdenticalAfterPublish": false,
+        "bytes": 205357,
+        "changedPixelFraction": 0.06213368055555556,
+        "freshBytes": 205349,
+        "freshSha256": "85f3a5df6a613a3562b8913ab9e823034925588bd73b5b4b6c5743d883be6df8",
+        "maxChannelDifference": 90,
+        "meanChannelDifference": 0.32188078703703704,
+        "path": "examples/roundtrip/renders/overview.png",
+        "sha256": "c5cdf8fe5e4c8243a8678a5faa88177350cd9d93741c5e754f08082572efa99b"
+      },
+      {
+        "byteIdenticalAfterPublish": false,
+        "bytes": 205459,
+        "changedPixelFraction": 0.06195659722222222,
+        "freshBytes": 205148,
+        "freshSha256": "2d793cbe66e8152337ed5a7cb2c95ab0164f121bcd9b06092d59da1c42a9b547",
+        "maxChannelDifference": 109,
+        "meanChannelDifference": 0.32202141203703705,
+        "path": "examples/roundtrip/result/vanilla.png",
+        "sha256": "fafeeb71bbc71a48e9b5582c212ae19af81ecc0407266a77d58a96755c85faef"
+      }
+    ],
+    "source": {
+      "layers": [
+        {
+          "bytes": 332637,
+          "path": "dc.geometry.usdc",
+          "sha256": "d73387613389fda72868152abc29f0ccfcae3f092f274e99bc3fb7b88998ec5c"
+        },
+        {
+          "bytes": 1471556,
+          "path": "dc.semantics.usdc",
+          "sha256": "1d9e6753da91b62fa95f553102f435c56a5ff93d63c2cec4f01d512dd8f1d3cd"
+        },
+        {
+          "bytes": 517,
+          "path": "dc.usda",
+          "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+        }
+      ],
+      "manifest_sha256": "2e9970f0def8657bb88a9a8b769de7266d1543e5132eacf0d56141c73faf158c",
+      "mode": "pinned",
+      "sha256": "628b1383ecb57956fd3c39967c68914afa97c3a3d24c7359c05c44b9cdb7abf9"
+    },
+    "sourceUnchanged": true,
+    "usdFiles": [
+      {
+        "bytes": 1660382,
+        "normalized_sha256": "52c61da3145a893341f8baa850dea8c8379fa8dfa6fac7fae62741b855bb7c59",
+        "path": "result/example.usdc",
+        "sha256": "bfeed2a1bb7b6f923a08c3d87a4a23e2d226c76d8cec5a3eb7a1f18935c1aaaa"
+      },
+      {
+        "bytes": 321,
+        "path": "result/layers/inputs/cameras.usda",
+        "sha256": "d28324cc0f2e09d0bf7856e341dc43162e82b5d938ff0ab9e23cd97232b5540e"
+      },
+      {
+        "bytes": 2997,
+        "path": "result/layers/out/display.usda",
+        "sha256": "a1d45cb42390bf180f213184a6057f4b9be2bed5e4d4043cc8b55b5e355343e1"
+      },
+      {
+        "bytes": 4592,
+        "path": "result/layers/out/roundtrip/applied/derived.usda",
+        "sha256": "26293010ab6fc68a7d040d8563bbd04a681b3e61527d6396ff104225c16077c1"
+      },
+      {
+        "bytes": 426,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.bonsai.usda",
+        "sha256": "b5f1de03b1757b43f22b56daeeec4aee82873130d53bf499c121e66a6a16dc38"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 2638,
+        "path": "result/layers/out/roundtrip/applied/kind.usda",
+        "sha256": "99db9f6f989fa6ea222713fe4c4b05f3f75274adba8ebfd09227878949554b25"
+      },
+      {
+        "bytes": 19876,
+        "path": "result/layers/out/roundtrip/applied/result.bonsai.usda",
+        "sha256": "80aaba886ae86b1d771e10ae3c459e77f2528f49a67138160c8a2b4eb78cdad9"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/applied/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 20932,
+        "path": "result/layers/out/roundtrip/final.usda",
+        "sha256": "97f042c3ac91f70111ec2ae4fdc06c05ddd757361602879b4f03ba9cfebcc065"
+      },
+      {
+        "bytes": 1145,
+        "path": "result/layers/out/roundtrip/intent.usda",
+        "sha256": "205336507a6e09d3ad7767790abd1c231275c00ed565a95c04a294b6b593fd68"
+      },
+      {
+        "bytes": 4589,
+        "path": "result/layers/out/roundtrip/reimported/derived.usda",
+        "sha256": "09a7e7ad05cd1f9a1c5f0ccfec104bdb03693b5cbde94c67c122724f4de87992"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/diagnostics.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/intent.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 2651,
+        "path": "result/layers/out/roundtrip/reimported/kind.usda",
+        "sha256": "f18db5318ae9264c9348d702f035c0baf5dc0c8337425daa2b355e884780fc3e"
+      },
+      {
+        "bytes": 45,
+        "path": "result/layers/out/roundtrip/reimported/result.ifc.usda",
+        "sha256": "3b15aabca600a665ca3cc6769b5fea14b52e547ba234313ce03c8840f2c804ce"
+      },
+      {
+        "bytes": 90,
+        "path": "result/layers/out/source.usda",
+        "sha256": "2614b5cc30e06e16b68cdf51e8ae3c8e07289aa758ce3ef19d3970b3b8210667"
+      }
+    ]
+  },
+  "publicationSweep": {
+    "detail": "82 files, 2783573 bytes, 0 findings",
+    "ok": true,
+    "scope": "Candidate tree before inserting the final sweep and structure evidence."
+  },
+  "publishedAttributesCompared": 179,
+  "pytest": {
+    "mode": "fresh full pytest; gate reused only after source and native-report fingerprints matched",
+    "passed": 34,
+    "seconds": 164.3,
+    "skipped": 0
+  },
+  "rangesWidened": [],
+  "roundtrip": [
+    {
+      "bodiesCompared": 2,
+      "counts": {
+        "elements": 2954,
+        "levels": 2,
+        "meshes": 2987,
+        "ports": 6212,
+        "spaces": 33
+      },
+      "driverDifferences": 0,
+      "driversCompared": 14,
+      "elements": 2,
+      "facility": "demo-datacentre-01",
+      "mode": "native-base",
+      "repeatMutations": 0,
+      "sourcePrims": 12266,
+      "variant": "base"
+    }
+  ],
+  "testEvidence": {
+    "native_sha256": "5a79388ae40f41e5072d256c72a710530f53a744bf5a5697c61e773afc9646b3",
+    "pytest": {
+      "passed": 34,
+      "skipped": 0
+    },
+    "source_sha256": "4abe9c1c5cc84a4965acc4a600ca682d6a227b1ed3ee19f4475f15846bac4cc4"
+  },
+  "version": "0.1.6"
+}

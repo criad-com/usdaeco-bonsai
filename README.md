@@ -35,7 +35,7 @@ the flattened final re-import needs no family plugins or sibling checkouts.
 Use Python with usd-core, IfcOpenShell 0.8.5, NumPy, pytest and the toolchain render dependencies.
 No package installation is required for source tests. Set `AECO_PYTHON` to that interpreter,
 and use sibling checkouts at the versions in dependencies.json (in particular,
-core at v0.9.2 and axis at v0.1.2). Set `USDRECORD` to stock OpenUSD
+core at v0.9.5 and axis at v0.1.5). Set `USDRECORD` to stock OpenUSD
 `usdrecord` with Embree support and its matching imaging runtime:
 
 ```sh
@@ -49,6 +49,7 @@ export AECO_SYNC_ROOT="$(dirname "$PWD")/usdaeco-sync"
 export AECO_IFC_ROOT="$(dirname "$PWD")/usdaeco-ifc"
 export TOOLCHAIN_DIR="$(dirname "$PWD")/usdaeco-toolchain"
 export AECO_DATACENTRE_ROOT="$(dirname "$PWD")/usdaeco-datacentre"
+export AECO_SCENARIOS_ROOT="$(dirname "$PWD")/usdaeco-scenarios"
 export AECO_CCTV_ROOT="$(dirname "$PWD")/usdaeco-cctv"
 export AECO_BUILDUP_ROOT="$(dirname "$PWD")/usdaeco-buildup"
 export AECO_WALL_ROOT="$(dirname "$PWD")/usdaeco-wall"
@@ -59,9 +60,9 @@ env -u PYTHONPATH "$AECO_PYTHON" -m pytest -q
 nix flake check
 ```
 
-`AECO_CORE` selects core v0.9.2; `AECO_AXIS_ROOT` selects axis v0.1.2.
+`AECO_CORE` selects core v0.9.5; `AECO_AXIS_ROOT` selects axis v0.1.5.
 Core must precede axis on the plugin path. The three
-kind libraries use their released v0.2.1 plugins. Blender 5.1.2 and Bonsai 0.8.5 supplies native execution.
+kind libraries use their released v0.2.5 plugins. Blender 5.1.2 and Bonsai 0.8.5 supplies native execution.
 Set `AECO_BLENDER` to Blender with Bonsai available. Set `USDRECORD` to an OpenUSD usdrecord executable with Embree support; the macOS
 system command may implement a different CLI.
 The check ends with the family `N checks, M failed` line and includes structure lint.
@@ -71,11 +72,11 @@ under ignored out/; it does not install a package or change a dependency checkou
 Flake inputs use public release names. For local source mapping use
 `nix flake check --override-input core "path:$AECO_CORE" --override-input axis "path:$AECO_AXIS_ROOT" --override-input sync "path:$AECO_SYNC_ROOT" --override-input ifc "path:$AECO_IFC_ROOT" --override-input toolchain "path:$TOOLCHAIN_DIR"`
 and override other inputs similarly. See the toolchain’s
-[local input policy](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.8/docs/repo-conventions.md).
+[local input policy](https://github.com/criad-com/usdaeco-toolchain/blob/v0.3.10/docs/repo-conventions.md).
 Native host availability is separate from Nix evaluation. The flake and source commands use the
 committed flat plugin directories; no dependency build is needed.
 
-Sync v0.5.2 uses its own core/axis loader; CCTV is pinned at v0.5.2 for this release.
+Sync v0.5.5 uses its own core/axis loader; CCTV is pinned at v0.5.6 for this release.
 
 ## Family
 
@@ -83,7 +84,7 @@ Core `>=0.9,<1.0`, axis `>=0.1,<0.2`, sync `>=0.5,<0.6`; IFC integration supplie
 reader and authoring protocol.
 Exact tested refs are in [dependencies.json](dependencies.json).
 See the [family board](https://github.com/criad-com/usdaeco-board) and the
-[sync host contract](https://github.com/criad-com/usdaeco-sync/blob/v0.5.2/docs/host-contract.md).
+[sync host contract](https://github.com/criad-com/usdaeco-sync/blob/v0.5.5/docs/host-contract.md).
 
 ## Layout
 
@@ -95,7 +96,9 @@ generated from the family skeleton and checked against its applicable S-rules.
 
 ## Status
 
-Version 0.1.5 publishes the full base facility with toolchain v0.3.8 and data centre v0.4.6: **70 checks, 0 failed**, **34 tests passed**, **21/21 native cases**, and **ResultStale PASS in two layouts**. See [facility acceptance](docs/facility-acceptance.md) for measured gates, native execution, source counts and deviations. Core, axis, sync and the other dependency pins are unchanged.
+Version 0.1.6 re-pins all eleven family inputs to public release tags.
+See [public re-pin acceptance](docs/public-repin.md) for the measured source, native and publication checks.
+**70 checks, 0 failed; 34 tests passed; 21/21 native cases.** Requirement ranges are unchanged.
 Native tests require Blender with Bonsai. Pipe creation, general wall edits and fitting creation are outside this adapter’s supported subset.
 
 ## Licence

@@ -1,5 +1,8 @@
 # Full-facility round trip — 0.1.5
 
+Historical release evidence; current pins and checks are in
+[public re-pin acceptance](public-repin.md).
+
 The published result builds on the pinned base facility and retains all source
 referents. The native round trip moves a wall 0.15 m and extends a pipe 0.20 m,
 then re-imports the exported IFC and compares 14 drivers and two native bodies.

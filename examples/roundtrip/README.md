@@ -7,10 +7,10 @@ env -u PYTHONPATH "$AECO_PYTHON" examples/roundtrip/run.py --publish
 ```
 
 The example composes the complete `demo-datacentre-01` base publication from
-`usdaeco-datacentre v0.4.6`: 12,266 source prims, 2,954 elements, 2,987 meshes,
+`usdaeco-datacentre v0.4.9`: 12,266 source prims, 2,954 elements, 2,987 meshes,
 6,212 ports, 33 spaces and two levels. Census expectations come from the pinned
 `dist/base/dc.manifest.json`. The base publication is unchanged from its recorded
-generator v0.4.2; v0.4.6 supplies the release and generator used here.
+generator v0.4.2; v0.4.9 supplies the release and generator used here.
 
 The runner generates a matching IFC in temporary space, imports native drivers
 through sync, moves the nearest wall by 0.15 m and extends its neighbouring pipe

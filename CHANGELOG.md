@@ -1,5 +1,12 @@
 # Changelog
 
+## 0.1.6
+
+- public re-pin: toolchain v0.3.10, core v0.9.5, axis v0.1.5, sync v0.5.5, datacentre v0.4.9, scenarios v0.8.0, CCTV v0.5.6, buildup v0.2.5, wall v0.2.5, pipe v0.2.5, IFC v0.2.2.
+- Record tagged source revisions; retain compatible requirement ranges.
+- Republish the native round trip: all 18 USD files retain their bytes; preserve PNGs after fresh rendering and record provenance-only result changes.
+- Verify 70 checks, 0 failed and 34 tests; record public-access and offline Nix limits.
+
 ## 0.1.5
 
 - Publish the full pinned base facility with converged Bonsai wall and pipe edits, source aliases, highlights and stock USD renders.

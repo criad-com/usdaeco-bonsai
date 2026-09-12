@@ -33,5 +33,5 @@ outside a local edit while still rejecting gaps within its affected objects.
 Other wall/pipe policies retain the released full element readback. Imported
 pipe sweeps receive Bonsai's existing material-profile repair before profile
 editing, and the full-facility example checks the requested depth change.
-The [facility acceptance](facility-acceptance.md) records the native and
+The [public re-pin acceptance](public-repin.md) records the native and
 publication measurements for this release.

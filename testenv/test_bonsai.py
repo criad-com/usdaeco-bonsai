@@ -19,8 +19,8 @@ def test_entry_point_contract(tmp_path, monkeypatch):
     from usdaeco_bonsai.plugins import register_plugins
     registry = Plug.Registry()
     core = registry.GetPluginWithName('usdAeco')
-    assert core.metadata['aeco']['version'] == '0.9.2'
-    assert registry.GetPluginWithName('usdAecoAxis').metadata['aeco']['version'] == '0.1.2'
+    assert core.metadata['aeco']['version'] == '0.9.5'
+    assert registry.GetPluginWithName('usdAecoAxis').metadata['aeco']['version'] == '0.1.5'
     assert registry.GetPluginForType(Usd.SchemaRegistry.GetTypeFromSchemaTypeName('AecoAxisAPI')).name == 'usdAecoAxis'
     stage = Usd.Stage.CreateInMemory()
     prim = stage.DefinePrim('/Element', 'Xform')

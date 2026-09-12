@@ -53,7 +53,7 @@ Run `env -u PYTHONPATH "$AECO_PYTHON" examples/roundtrip/run.py` for the complet
 
 ## 6 The example on the demo data centre
 
-The complete demo-datacentre-01 base facility is pinned at v0.4.6. The runner
+The complete demo-datacentre-01 base facility is pinned at v0.4.9. The runner
 imports native drivers, moves a wall by 0.15 m and extends a pipe by 0.20 m through
 Bonsai, exports, re-imports and compares both bodies and 14 drivers. Every source
 prim remains in the result. The pinned manifest supplies the census: 2,954 elements,
@@ -76,7 +76,7 @@ Native compilation and an installed wheel are separate from the source-based gat
 
 ## 9 Status
 
-Version 0.1.5 composes the complete base publication with toolchain v0.3.8,
-retaining sync v0.5.2, core v0.9.2 and axis v0.1.2. Native readback respects the
+Version 0.1.6 composes the complete base publication with toolchain v0.3.10,
+sync v0.5.5, core v0.9.5 and axis v0.1.5. Native readback respects the
 transaction's disconnect scope and prepares imported profile sweeps for editing.
-Measured results and deviations are recorded in [facility acceptance](facility-acceptance.md).
+Measured results and deviations are recorded in [public re-pin acceptance](public-repin.md).

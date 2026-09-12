@@ -1,6 +1,6 @@
 {
   "name": "usdaeco-bonsai",
-  "version": "0.1.5",
+  "version": "0.1.6",
   "kind": "integration",
   "tier": "integration",
   "requires": {
